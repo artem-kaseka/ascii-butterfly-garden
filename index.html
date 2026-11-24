@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ASCII Butterfly Garden</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    html, body {
+      width: 100%;
+      height: 100%;
+      overflow: hidden;
+      background: #07080f;
+      color: #d8dce8;
+      font-family: 'Liberation Mono', 'SFMono-Regular', 'JetBrains Mono', 'Fira Code', 'DejaVu Sans Mono', 'Consolas', monospace;
+      user-select: none;
+      -webkit-user-select: none;
+    }
+    #garden-canvas {
+      display: block;
+      width: 100vw;
+      height: 100vh;
+      cursor: none;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="garden-canvas" aria-label="Interactive ASCII Butterfly Garden"></canvas>
+  <script src="./garden.js"></script>
+</body>
+</html>
